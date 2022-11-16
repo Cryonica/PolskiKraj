@@ -39,14 +39,14 @@ namespace PolskiKraj.ViewModels
             }
         }
 
-        public async void LoadItemId(string itemId)
+        public async void LoadItemId(string ID)
         {
             try
             {
                 var item = await DataStore.GetItemAsync(itemId);
-                Id = item.Id;
-                Text = item.Text;
-                Description = item.Description;
+                Id = item.ID;
+                Text = item.Sample;
+                Description = item.Type;
             }
             catch (Exception)
             {

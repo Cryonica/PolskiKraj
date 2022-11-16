@@ -49,11 +49,11 @@ namespace PolskiKraj.ViewModels
 
         private async void OnSave()
         {
-            Item newItem = new Item()
+            WordsSusch newItem = new WordsSusch()
             {
-                Id = Guid.NewGuid().ToString(),
-                Text = Text,
-                Description = Description
+                ID = Guid.NewGuid().ToString(),
+                Sample = Text,
+                Type = Description
             };
 
             await DataStore.AddItemAsync(newItem);

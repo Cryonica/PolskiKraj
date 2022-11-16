@@ -10,20 +10,20 @@ namespace PolskiKraj.ViewModels
 {
     public class ItemsViewModel : BaseViewModel
     {
-        private Item _selectedItem;
+        private WordsSusch _selectedItem;
 
-        public ObservableCollection<Item> Items { get; }
+        public ObservableCollection<WordsSusch> Items { get; }
         public Command LoadItemsCommand { get; }
         public Command AddItemCommand { get; }
-        public Command<Item> ItemTapped { get; }
+        public Command<WordsSusch> ItemTapped { get; }
 
         public ItemsViewModel()
         {
             Title = "Записи";
-            Items = new ObservableCollection<Item>();
+            Items = new ObservableCollection<WordsSusch>();
             LoadItemsCommand = new Command(async () => await ExecuteLoadItemsCommand());
 
-            ItemTapped = new Command<Item>(OnItemSelected);
+            ItemTapped = new Command<WordsSusch>(OnItemSelected);
 
             AddItemCommand = new Command(OnAddItem);
         }
@@ -57,7 +57,7 @@ namespace PolskiKraj.ViewModels
             SelectedItem = null;
         }
 
-        public Item SelectedItem
+        public WordsSusch SelectedItem
         {
             get => _selectedItem;
             set
@@ -72,13 +72,13 @@ namespace PolskiKraj.ViewModels
             await Shell.Current.GoToAsync(nameof(NewItemPage));
         }
 
-        async void OnItemSelected(Item item)
+        async void OnItemSelected(WordsSusch item)
         {
             if (item == null)
                 return;
 
             // This will push the ItemDetailPage onto the navigation stack
-            await Shell.Current.GoToAsync($"{nameof(ItemDetailPage)}?{nameof(ItemDetailViewModel.ItemId)}={item.Id}");
+            await Shell.Current.GoToAsync($"{nameof(ItemDetailPage)}?{nameof(ItemDetailViewModel.ItemId)}={item.ID}");
         }
     }
 }

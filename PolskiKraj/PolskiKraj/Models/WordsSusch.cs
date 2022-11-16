@@ -6,6 +6,7 @@ namespace PolskiKraj.Models
 {
     public class WordsSusch
     {
+        public string ID { get; set; }
         public string Type { get; set; }
         public string Rod { get; set; }
         public bool Life { get; set; }
