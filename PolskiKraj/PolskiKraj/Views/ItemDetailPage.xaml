@@ -6,11 +6,35 @@
              x:Class="PolskiKraj.Views.ItemDetailPage"
              Title="{Binding Title}">
 
+    
     <StackLayout Spacing="20" Padding="15">
-        <Label Text="Text:" FontSize="Medium" />
-        <Label Text="{Binding Text}" FontSize="Small"/>
-        <Label Text="Description:" FontSize="Medium" />
-        <Label Text="{Binding Description}" FontSize="Small"/>
+        <Label Text="{Binding Description}" FontSize="Medium" Style="{DynamicResource ListItemTextStyle}" />
+        <Grid  Grid.ColumnSpan="2" Padding="10,0,10,10" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Label Text="Падеж" FontSize="Medium" VerticalOptions="Center"  HorizontalOptions="Center" Grid.Column="0" Grid.Row="0" TextColor="Gray"/>
+            <Label Text="Род" FontSize="Medium" VerticalOptions="Center" HorizontalOptions="Center" Grid.Column="1" Grid.Row="0" TextColor="Gray"   />
+            <Label Text="Живой" FontSize="Medium" VerticalOptions="Center" HorizontalOptions="Center" Grid.Column="2" Grid.Row="0" TextColor="Gray"   />
+            <Frame BackgroundColor="#15617d" Grid.Column="0" Grid.Row="1" Padding="5" HorizontalOptions="Center" WidthRequest="120" HeightRequest="20" CornerRadius="40">
+                <Label WidthRequest="40" Text="{Binding Sklon }" HorizontalTextAlignment="Center" TextColor="White"></Label>
+            </Frame>
+            <Frame BackgroundColor="#15617d" Grid.Column="1" Grid.Row="1" Padding="5" HorizontalOptions="Center" WidthRequest="50" CornerRadius="40">
+                <Label WidthRequest="40" Text="{Binding Rod }" HorizontalTextAlignment="Center" TextColor="White"></Label>
+            </Frame>
+            <Frame BackgroundColor="#15617d" Grid.Column="2" Grid.Row="1" Padding="5" HorizontalOptions="Center" WidthRequest="50" CornerRadius="40">
+                <Label WidthRequest="40" Text="{Binding Life }" HorizontalTextAlignment="Center" TextColor="White"></Label>
+            </Frame>
+
+        </Grid>
+        <Label Text="{Binding Text, StringFormat='Пример: {0}'}" FontSize="Small" Style="{DynamicResource ListItemDetailTextStyle}"/>
+
     </StackLayout>
     
 </ContentPage>

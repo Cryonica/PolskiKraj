@@ -26,6 +26,7 @@ namespace PolskiKraj.Views
             else
             {
                 this.Content = Global.GetWebSite;
+                
             }
         }
     }

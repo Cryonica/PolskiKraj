@@ -12,6 +12,9 @@ namespace PolskiKraj.ViewModels
         private string itemId;
         private string text;
         private string description;
+        private bool life;
+        private string rod;
+        private string sklon;
         public string Id { get; set; }
 
         public string Text
@@ -25,7 +28,21 @@ namespace PolskiKraj.ViewModels
             get => description;
             set => SetProperty(ref description, value);
         }
-
+        public bool Life
+        {
+            get => life;
+            set => SetProperty(ref life, value);
+        }
+        public string Rod
+        {
+            get => rod;
+            set => SetProperty(ref rod, value);
+        }
+        public string Sklon
+        {
+            get => sklon;
+            set => SetProperty(ref sklon, value);
+        }
         public string ItemId
         {
             get
@@ -47,6 +64,9 @@ namespace PolskiKraj.ViewModels
                 Id = item.ID;
                 Text = item.Sample;
                 Description = item.Type;
+                Rod = item.Rod;
+                Sklon = item.Sklon;
+                Life = item.Life;
             }
             catch (Exception)
             {
