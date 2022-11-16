@@ -1,6 +1,7 @@
 ﻿using PolskiKraj.Services;
 using PolskiKraj.Views;
 using System;
+using System.Net;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -15,6 +16,11 @@ namespace PolskiKraj
             DependencyService.Register<MockDataStore>();
             MainPage = new AppShell();
             Global.Init();
+            using (WebClient wc = new WebClient())
+            {
+                var json = wc.DownloadString("https://github.com/Cryonica/PolskiKraj/blob/main/sampe_data.json");
+            }
+            
         }
 
         protected override void OnStart()
