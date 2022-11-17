@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewmodels="clr-namespace:PolskiKraj.ViewModels" 
+             x:DataType="viewmodels:VerbsViewModel"
+             x:Class="PolskiKraj.Views.Verbs"
+             Title="{Binding Title}">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <StackLayout Padding="10">
+                    <Image Source="butterfly" Aspect="AspectFit" Grid.Row="0" HeightRequest="150" VerticalOptions="Center" BackgroundColor="#faf9f5"/>
+                    <StackLayout Grid.Row="1">
+                        <Label Padding="10" TextColor="Gray">
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <Span Text="Основы глаголов " TextColor="Red" FontAttributes="Bold"/>
+                                    <Span Text=" в зелених крыльях бабочки между собой всегда одинаковы. Точно так же в свою очередь одинаковы основы глаголов в жёлтых. Всегда и везде, в любом спряжении любого глагола." TextColor="Black"/>
+
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
+                        <StackLayout>
+                            <Label Text="NIEŚĆ (НЕСТИ)"
+                                   BackgroundColor="Gray" 
+                                   TextColor="White"
+                                   FontSize="18" 
+                                   FontAttributes="Bold" 
+                                   HorizontalTextAlignment="Center" 
+                                   VerticalTextAlignment="Center"
+                                   HorizontalOptions="FillAndExpand"></Label>
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="*"/>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="Auto"/>
+
+                                </Grid.ColumnDefinitions>
+                                <Label Text="Ja" Grid.Row="0" Grid.Column="0"
+                                           TextColor="Black"
+                                       BackgroundColor="AliceBlue"
+                                           FontSize="15"
+                                       Padding="5"
+                                           VerticalTextAlignment="Center"
+                                           HorizontalTextAlignment="Center"
+                                           />
+                                <Label Text="TY" Grid.Row="1" Grid.Column="0"
+                                           TextColor="Black"
+                                        BackgroundColor="AliceBlue"
+                                           FontSize="15"
+                                       Padding="5"
+                                           VerticalTextAlignment="Center"
+                                           HorizontalTextAlignment="Center"
+                                           />
+                                <Label Text="ON/ONA/ONO/ PAN/PANI" Grid.Row="2" Grid.Column="0"
+                                           TextColor="Black"
+                                        BackgroundColor="AliceBlue"
+                                           FontSize="15"
+                                       Padding="10"
+                                           VerticalTextAlignment="Center"
+                                           HorizontalTextAlignment="Center"
+                                       VerticalOptions="CenterAndExpand"/>
+                                <Label Text="NIOSę" Grid.Row="0" Grid.Column="1"
+                                           TextColor="Black"
+                                       Padding="20"
+                                       BackgroundColor="#77cfbf"
+                                           FontSize="15"
+                                           VerticalTextAlignment="Center"
+                                           HorizontalTextAlignment="Center"
+                                           />
+                                <Label Text="niesiesz" Grid.Row="1" Grid.Column="1"
+                                           TextColor="Black"
+                                       Background="#f6f13f"
+                                           FontSize="15"
+                                           VerticalTextAlignment="Center"
+                                           HorizontalTextAlignment="Center"
+                                           />
+                                <Label Text="niesie" Grid.Row="2" Grid.Column="1"
+                                           TextColor="Black"
+                                       BackgroundColor="#f6f13f"
+                                           FontSize="15"
+                                           VerticalTextAlignment="Center"
+                                           HorizontalTextAlignment="Center"/>
+                                <Label Text="MY" Grid.Row="0" Grid.Column="2"
+                                           TextColor="Black"
+                                       BackgroundColor="AliceBlue"
+                                           FontSize="15"
+                                       Padding="5"
+                                           VerticalTextAlignment="Center"
+                                           HorizontalTextAlignment="Center"
+                                           />
+                                <Label Text="WY" Grid.Row="1" Grid.Column="2"
+                                           TextColor="Black"
+                                        BackgroundColor="AliceBlue"
+                                           FontSize="15"
+                                       Padding="5"
+                                           VerticalTextAlignment="Center"
+                                           HorizontalTextAlignment="Center"
+                                           />
+                                <Label Text="ONI/ONE/ PAŃSTWO/ PANOWIE/ PANIE" Grid.Row="2" Grid.Column="2"
+                                           TextColor="Black"
+                                        BackgroundColor="AliceBlue"
+                                           FontSize="15"
+                                       Padding="10"
+                                           VerticalTextAlignment="Center"
+                                           HorizontalTextAlignment="Center"
+                                       VerticalOptions="CenterAndExpand"/>
+                                <Label Text="niesiemy" Grid.Row="0" Grid.Column="3"
+                                           TextColor="Black"
+                                       Padding="15"
+                                       BackgroundColor="#f6f13f"
+                                           FontSize="15"
+                                           VerticalTextAlignment="Center"
+                                           HorizontalTextAlignment="Center"
+                                           />
+                                <Label Text="niesiecie" Grid.Row="1" Grid.Column="3"
+                                           TextColor="Black"
+                                       Background="#f6f13f"
+                                           FontSize="15"
+                                           VerticalTextAlignment="Center"
+                                           HorizontalTextAlignment="Center"
+                                           />
+                                <Label Text="NIOSą" Grid.Row="2" Grid.Column="3"
+                                           TextColor="Black"
+                                       BackgroundColor="#77cfbf"
+                                           FontSize="15"
+                                           VerticalTextAlignment="Center"
+                                           HorizontalTextAlignment="Center"/>
+
+
+                            </Grid>
+                            
+                                    
+                        </StackLayout>
+                        
+
+                    </StackLayout>
+                    <Frame 
+                        BackgroundColor="#FF0000 " 
+                        Padding="10" 
+                        HorizontalOptions="Center" 
+                        WidthRequest="380" CornerRadius="20"
+                        Margin="0,20,0,0">
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding OpenVerbCommand}"
+                                                  CommandParameter="Verb1"/>
+                        </Frame.GestureRecognizers>
+                        <StackLayout VerticalOptions="Center">
+                            <Label Text="Глаголы 1 спряжения" HorizontalTextAlignment="Center" TextColor="White"></Label>
+                            <Label  HorizontalTextAlignment="Center">
+                                <Label.FormattedText>
+                                    <FormattedString>
+                                        <Span Text="Окончания: " TextColor="White"/>
+                                        <Span Text="-ować, -ywać, -iwać, -awać, -nąć, -ąć, -ć, -c," TextColor="White" FontAttributes="Bold"/>
+                                    </FormattedString>
+                                </Label.FormattedText>
+                            </Label>
+                        </StackLayout>
+                    </Frame>
+                    <Frame 
+                        BackgroundColor="#15617d" 
+                        Padding="10" 
+                        HorizontalOptions="Center"
+                        WidthRequest="380" 
+                        CornerRadius="20">
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding OpenVerbCommand}"
+                                                  CommandParameter="Verb2"/>
+                        </Frame.GestureRecognizers>
+                        
+                        <StackLayout VerticalOptions="Center">
+                            <Label Text="Глаголы 2 спряжения" HorizontalTextAlignment="Center" TextColor="White"></Label>
+                            <Label Text="Окончания: -ić, -yć" HorizontalTextAlignment="Center" TextColor="White"></Label>
+                        </StackLayout>
+                    </Frame>
+                    <Frame BackgroundColor="#15617d" Padding="10" HorizontalOptions="Center" WidthRequest="380" CornerRadius="20">
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding OpenVerbCommand}"
+                                                  CommandParameter="Verb3"/>
+                        </Frame.GestureRecognizers>
+                        <StackLayout VerticalOptions="Center">
+                            <Label Text="Глаголы 3 спряжения" HorizontalTextAlignment="Center" TextColor="White"></Label>
+                            <Label Text="Окончания: -ać + исключение mieć (иметь) " HorizontalTextAlignment="Center" TextColor="White"></Label>
+                        </StackLayout>
+                    </Frame>
+                    <Frame BackgroundColor="#15617d"  Padding="10" HorizontalOptions="Center" WidthRequest="380" CornerRadius="20">
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding OpenVerbCommand}"
+                                                  CommandParameter="Verb4"/>
+                        </Frame.GestureRecognizers>
+                        <StackLayout VerticalOptions="Center">
+                            <Label Text="Глаголы 4 спряжения (всего 5 штук)" HorizontalTextAlignment="Center" TextColor="White"></Label>
+                            <Label Text="umieć, rozumieć, śmieć, wiedzieć, jeść" HorizontalTextAlignment="Center" TextColor="White"></Label>
+                        </StackLayout>
+                    </Frame>
+
+                </StackLayout>
+                
+
+            </StackLayout>
+            
+
+        </ScrollView>
+       
+    </ContentPage.Content>
+</ContentPage>

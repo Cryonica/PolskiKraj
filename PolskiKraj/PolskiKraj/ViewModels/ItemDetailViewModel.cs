@@ -60,7 +60,7 @@ namespace PolskiKraj.ViewModels
         {
             try
             {
-                var item = await DataStore.GetItemAsync(itemId);
+                var item = await DataStoreWordSusch.GetItemAsync(itemId);
                 Id = item.ID;
                 Text = item.Sample;
                 Description = item.Type;

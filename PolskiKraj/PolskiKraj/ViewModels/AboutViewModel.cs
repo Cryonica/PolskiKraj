@@ -10,7 +10,7 @@ namespace PolskiKraj.ViewModels
         public AboutViewModel()
         {
             Title = "About";
-            OpenWebCommand = new Command(() =>  Shell.Current.GoToAsync($"WebSite"));
+            OpenWebCommand = new Command(() =>  Shell.Current.GoToAsync($"Verbs"));
         }
 
         public ICommand OpenWebCommand { get; }

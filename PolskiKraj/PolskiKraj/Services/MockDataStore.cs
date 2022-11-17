@@ -8,9 +8,11 @@ using System.Threading.Tasks;
 
 namespace PolskiKraj.Services
 {
+    
     public class MockDataStore : IDataStore<WordsSusch>
     {
         readonly List<WordsSusch> items;
+        
 
         public MockDataStore()
         {

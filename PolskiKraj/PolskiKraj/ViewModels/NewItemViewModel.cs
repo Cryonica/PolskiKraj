@@ -56,7 +56,7 @@ namespace PolskiKraj.ViewModels
                 Type = Description
             };
 
-            await DataStore.AddItemAsync(newItem);
+            await DataStoreWordSusch.AddItemAsync(newItem);
 
             // This will pop the current page off the navigation stack
             await Shell.Current.GoToAsync("..");

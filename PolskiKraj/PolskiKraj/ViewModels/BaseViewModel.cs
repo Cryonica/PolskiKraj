@@ -10,7 +10,8 @@ namespace PolskiKraj.ViewModels
 {
     public class BaseViewModel : INotifyPropertyChanged
     {
-        public IDataStore<WordsSusch> DataStore => DependencyService.Get<IDataStore<WordsSusch>>();
+        public IDataStore<WordsSusch> DataStoreWordSusch => DependencyService.Get<IDataStore<WordsSusch>>();
+       
 
         bool isBusy = false;
         public bool IsBusy

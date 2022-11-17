@@ -14,30 +14,26 @@ namespace PolskiKraj
     {
         public AppShell()
         {
-            
-            
-            
             InitializeComponent();
             Routing.RegisterRoute(nameof(ItemDetailPage), typeof(ItemDetailPage));
             Routing.RegisterRoute(nameof(NewItemPage), typeof(NewItemPage));
             Routing.RegisterRoute(nameof(WebSite), typeof(WebSite));
+            Routing.RegisterRoute(nameof(Verbs), typeof(Verbs));
+            Routing.RegisterRoute(nameof(Verb1), typeof(Verb1));
+            Routing.RegisterRoute(nameof(Verb2), typeof(Verb2));
+            Routing.RegisterRoute(nameof(Verb3), typeof(Verb3));
+            Routing.RegisterRoute(nameof(Verb4), typeof(Verb4));
 
-           
-           bool chekFileWeb = FilePresent("https://github.com/Cryonica/PolskiKraj/blob/main/sampe_data.json").Result;
+            bool chekFileWeb = FilePresent("https://github.com/Cryonica/PolskiKraj/blob/main/sampe_data.json").Result;
             if (!chekFileWeb)
             {
                 DisplayAlert("Ошибка!", "Нет связи с сервером", "OK");
             }
             else
             {
-                new ItemsViewModel();
                 Global.Init();
             }
-           
-           
-            
         }
-        
         private Task<bool> FilePresent(string filename)
         {
             //return await HttpClientHelper.DoesFileExist(filename);
@@ -55,8 +51,6 @@ namespace PolskiKraj
             return Task.FromResult(status == HttpStatusCode.OK ? true : false);
 
         }
-
-
 
     }
 }

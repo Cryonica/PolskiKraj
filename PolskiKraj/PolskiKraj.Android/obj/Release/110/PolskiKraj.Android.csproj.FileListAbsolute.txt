@@ -449,3 +449,4 @@ C:\Users\user\source\repos\PolskiKraj\PolskiKraj\PolskiKraj.Android\obj\Release\
 C:\Users\user\source\repos\PolskiKraj\PolskiKraj\PolskiKraj.Android\obj\Release\110\stamp\_GenerateJavaStubs.stamp
 C:\Users\user\source\repos\PolskiKraj\PolskiKraj\PolskiKraj.Android\obj\Release\110\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\user\source\repos\PolskiKraj\PolskiKraj\PolskiKraj.Android\obj\Release\110\stamp\_ResolveLibraryProjectImports.stamp
+C:\Users\user\source\repos\PolskiKraj\PolskiKraj\PolskiKraj.Android\obj\Release\110\res\drawable\butterfly.jpg

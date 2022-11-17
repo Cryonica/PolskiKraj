@@ -1,8 +1,10 @@
 ﻿using PolskiKraj.Models;
 using PolskiKraj.Views;
 using System;
+using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Diagnostics;
+using System.Linq;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 
@@ -11,7 +13,6 @@ namespace PolskiKraj.ViewModels
     public class ItemsViewModel : BaseViewModel
     {
         private WordsSusch _selectedItem;
-
         public ObservableCollection<WordsSusch> Items { get; }
         public Command LoadItemsCommand { get; }
         public Command AddItemCommand { get; }
@@ -35,7 +36,9 @@ namespace PolskiKraj.ViewModels
             try
             {
                 Items.Clear();
-                var items = await DataStore.GetItemsAsync(true);
+                var items = await DataStoreWordSusch.GetItemsAsync(true);
+                //items= items.Where(t => t.Rod == "ср")
+                //    .ToList();
                 foreach (var item in items)
                 {
                     Items.Add(item);
