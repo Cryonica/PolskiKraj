@@ -1,15 +1,31 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+<CarouselPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
             xmlns:viewmodels="clr-namespace:PolskiKraj.ViewModels"
              x:Class="PolskiKraj.Views.Verb2"
-             x:DataType="viewmodels:VerbViewModel"
-             Title="{Binding Title}">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Verb2"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
-    </ContentPage.Content>
-</ContentPage>
+             x:DataType="viewmodels:Verb2ViewModel"
+             Title="{Binding Title}"
+              xmlns:local="clr-namespace:PolskiKraj.Views">
+
+
+    <ContentPage BackgroundColor="Yellow">
+        <ContentPage.Content>
+            <StackLayout HorizontalOptions="Center"
+                         VerticalOptions="Center">
+                <Label Text="1111"/>
+            </StackLayout>
+            
+        </ContentPage.Content>
+        
+    </ContentPage>
+    <ContentPage BackgroundColor="Red">
+        <ContentPage.Content>
+            <StackLayout HorizontalOptions="Center"
+                         VerticalOptions="Center">
+                <Label Text="222"/>
+            </StackLayout>
+
+        </ContentPage.Content>
+
+    </ContentPage>
+</CarouselPage>

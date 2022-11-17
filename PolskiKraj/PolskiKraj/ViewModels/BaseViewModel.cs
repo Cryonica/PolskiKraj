@@ -13,6 +13,7 @@ namespace PolskiKraj.ViewModels
         public IDataStore<WordsSusch> DataStoreWordSusch => DependencyService.Get<IDataStore<WordsSusch>>();
        
 
+
         bool isBusy = false;
         public bool IsBusy
         {

@@ -13,11 +13,12 @@ namespace PolskiKraj.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Verb4 : ContentPage
     {
+        Verb4ViewModel viewModel;
         public Verb4()
         {
-            VerbViewModel viewModel;
+           
             InitializeComponent();
-            BindingContext = viewModel = new VerbViewModel { Title = "4-ое спряжение" };
+            BindingContext = viewModel = new Verb4ViewModel();
         }
     }
 }

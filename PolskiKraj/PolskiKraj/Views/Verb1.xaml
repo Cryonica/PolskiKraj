@@ -1,16 +1,251 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
-             xmlns:viewmodels="clr-namespace:PolskiKraj.ViewModels"
+             xmlns:viewmodels="clr-namespace:PolskiKraj.ViewModels" xmlns:models="clr-namespace:PolskiKraj.Models"
              x:Class="PolskiKraj.Views.Verb1"
-             x:DataType="viewmodels:VerbViewModel"
-            
+             x:DataType="viewmodels:Verb1ViewModel"
              Title="{Binding Title}">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="TableValue" TargetType="Label">
+                <Setter Property="TextColor" Value="Black"/>
+                <Setter Property="BackgroundColor" Value="AliceBlue"/>
+                <Setter Property="FontSize" Value="15"/>
+                <Setter Property="Padding" Value="5"/>
+                <Setter Property="VerticalTextAlignment" Value="Center"/>
+                <Setter Property="HorizontalTextAlignment" Value="Center"/>
+            </Style>
+            <Style x:Key="TableValueGreen" TargetType="Label">
+                <Setter Property="TextColor" Value="Black"/>
+                <Setter Property="BackgroundColor" Value="#77cfbf"/>
+                <Setter Property="FontSize" Value="15"/>
+                <Setter Property="Padding" Value="5"/>
+                <Setter Property="VerticalTextAlignment" Value="Center"/>
+                <Setter Property="HorizontalTextAlignment" Value="Center"/>
+            </Style>
+            <Style x:Key="TableValueYellow" TargetType="Label">
+                <Setter Property="TextColor" Value="Black"/>
+                <Setter Property="BackgroundColor" Value="#f6f13f"/>
+                <Setter Property="FontSize" Value="15"/>
+                <Setter Property="VerticalTextAlignment" Value="Center"/>
+                <Setter Property="HorizontalTextAlignment" Value="Center"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Verb1"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        <StackLayout Orientation="Vertical" 
+                         HorizontalOptions="Fill">
+            <Label Text ="Общее правило"
+                   Padding="00"
+                   FontSize="20"
+                   TextColor="Black"
+                   HorizontalOptions="CenterAndExpand"
+                   >
+                
+                
+            </Label>    
+            <Grid Padding="0">
+                
+                <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="0.5*"/>
+                        <ColumnDefinition Width="0.5*"/>
+                    </Grid.ColumnDefinitions>
+                <Label Text="Ja" Grid.Row="0" Grid.Column="0"
+                                           Style="{DynamicResource TableValue}"/>
+                <Label Text="TY" Grid.Row="1" Grid.Column="0" 
+                                       Style="{DynamicResource TableValue}"/>
+                <Label Text="ON/ONA/ONO/ PAN/PANI" Grid.Row="2" Grid.Column="0"
+                                           Style="{DynamicResource TableValue}"/>
+                <Label Text="MY" Grid.Row="3" Grid.Column="0"
+                                           Style="{DynamicResource TableValue}"/>
+                <Label Text="WY" Grid.Row="4" Grid.Column="0"
+                                           Style="{DynamicResource TableValue}"/>
+                <Label Text="ONI / PANOWIE / PAŃSTWO" Grid.Row="5" Grid.Column="0"
+                                           Style="{DynamicResource TableValue}"/>
+                <Label Text="-Ę" Grid.Row="0" Grid.Column="1"
+                                           Style="{DynamicResource TableValueGreen}"/>
+                <Label Grid.Row="1" Grid.Column="1"
+                                          Style="{DynamicResource TableValueYellow}">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span Text="e" Style="{StaticResource TextGreenBold}"/>
+                                <Span Text="SZ" Style="{StaticResource TextRedBold}"/>
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                <Label Grid.Row="2" Grid.Column="1"
+                                          Style="{DynamicResource TableValueYellow}">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span Text="e" Style="{StaticResource TextGreenBold}"/>
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                <Label Grid.Row="3" Grid.Column="1"
+                                          Style="{DynamicResource TableValueYellow}">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span Text="e" Style="{StaticResource TextGreenBold}"/>
+                                <Span Text="MY" Style="{StaticResource TextRedBold}"/>
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                <Label Grid.Row="4" Grid.Column="1"
+                                          Style="{DynamicResource TableValueYellow}">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span Text="e" Style="{StaticResource TextGreenBold}"/>
+                                <Span Text="CIE" Style="{StaticResource TextRedBold}"/>
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                <Label Text="-Ą" Grid.Row="5" Grid.Column="1"
+                                           Style="{DynamicResource TableValueGreen}"/>
+            </Grid>
+            <StackLayout Padding="0,-2,0,-5">
+                <CarouselView ItemsSource="{Binding Items}" Margin="0,0,00,0">
+                    <CarouselView.ItemTemplate>
+                        <DataTemplate>
+                            <StackLayout x:DataType="models:WordVerb" Padding="5">
+                                <Grid BackgroundColor="#ebeef2"        >
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                    </Grid.RowDefinitions>
+                                    <Label HorizontalOptions="Center" TextColor="Black" FontAttributes="Bold" VerticalOptions="Center" Grid.Row="0">
+                                        <Label.FormattedText>
+                                            <FormattedString>
+                                                <Span Text="Окончания на "></Span>
+                                                <Span Text="{Binding EndInfinitiv}"></Span>
+                                            </FormattedString>
+                                        </Label.FormattedText>
+                                    </Label>
+                                    <Label HorizontalOptions="Center" TextColor="Black" FontAttributes="Bold" Grid.Row="1" >
+                                        <Label.FormattedText>
+                                            <FormattedString>
+
+                                                <Span Text="{Binding Root}"></Span>
+                                                <Span Text="{Binding EndInfinitiv}"></Span>
+                                                <Span Text="{Binding Description}"></Span>
+                                            </FormattedString>
+                                        </Label.FormattedText>
+                                    </Label>
+
+                                </Grid>
+                                
+                                <Grid >
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="0.5*"/>
+                                        <ColumnDefinition Width="0.5*"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <Label Text="Ja" Grid.Row="0" Grid.Column="0"
+                                                   Style="{DynamicResource TableValue}"/>
+                                    <Label Text="TY" Grid.Row="1" Grid.Column="0" 
+                                                   Style="{DynamicResource TableValue}"/>
+                                    <Label Text="ON/ONA/ONO/ PAN/PANI" Grid.Row="2" Grid.Column="0"
+                                                   Style="{DynamicResource TableValue}"/>
+                                    <Label Text="MY" Grid.Row="3" Grid.Column="0"
+                                                   Style="{DynamicResource TableValue}"/>
+                                    <Label Text="WY" Grid.Row="4" Grid.Column="0"
+                                                   Style="{DynamicResource TableValue}"/>
+                                    <Label Text="ONI / PANOWIE / PAŃSTWO" Grid.Row="5" Grid.Column="0"
+                                                   Style="{DynamicResource TableValue}"/>
+                                    <Label Grid.Row="0" Grid.Column="1"
+                                                   Style="{DynamicResource TableValueGreen}">
+                                        <Label.FormattedText>
+                                            <FormattedString>
+                                                <Span Text="{Binding Root}"/>
+                                                <Span Text="{Binding End1}" Style="{StaticResource TextRedBold}"/>
+
+                                            </FormattedString>
+                                        </Label.FormattedText>
+
+                                    </Label>
+                                    <Label Grid.Row="1" Grid.Column="1"
+                                                   Style="{DynamicResource TableValueYellow}">
+                                        <Label.FormattedText>
+                                            <FormattedString>
+                                                <Span Text="{Binding Root}"/>
+                                                <Span Text="{Binding End2}" Style="{StaticResource TextRedBold}"/>
+
+                                            </FormattedString>
+                                        </Label.FormattedText>
+                                    </Label>
+                                    <Label Grid.Row="2" Grid.Column="1"
+                                          Style="{DynamicResource TableValueYellow}">
+                                        <Label.FormattedText>
+                                            <FormattedString>
+                                                <Span Text="{Binding Root}"/>
+                                                <Span Text="{Binding End3}" Style="{StaticResource TextRedBold}"/>
+
+                                            </FormattedString>
+                                        </Label.FormattedText>
+                                    </Label>
+                                    <Label Grid.Row="3" Grid.Column="1"
+                                          Style="{DynamicResource TableValueYellow}">
+                                        <Label.FormattedText>
+                                            <FormattedString>
+                                                <Span Text="{Binding Root}"/>
+                                                <Span Text="{Binding End4}" Style="{StaticResource TextRedBold}"/>
+                                            </FormattedString>
+                                        </Label.FormattedText>
+                                    </Label>
+                                    <Label Grid.Row="4" Grid.Column="1"
+                                          Style="{DynamicResource TableValueYellow}">
+                                        <Label.FormattedText>
+                                            <FormattedString>
+                                                <Span Text="{Binding Root}"/>
+                                                <Span Text="{Binding End5}" Style="{StaticResource TextRedBold}"/>
+                                            </FormattedString>
+                                        </Label.FormattedText>
+                                    </Label>
+                                    <Label Grid.Row="5" Grid.Column="1"
+                                                   Style="{DynamicResource TableValueGreen}">
+                                        <Label.FormattedText>
+                                            <FormattedString>
+                                                <Span Text="{Binding Root}"/>
+                                                <Span Text="{Binding End6}" Style="{StaticResource TextRedBold}"/>
+                                            </FormattedString>
+                                        </Label.FormattedText>
+                                    </Label>
+                                </Grid>
+
+                            </StackLayout>
+                        </DataTemplate>
+                    </CarouselView.ItemTemplate>
+                </CarouselView>
+                <IndicatorView x:Name="indicator"  Grid.Row="0"
+                                       IndicatorSize="10"
+                                       IndicatorColor="Gray"
+                                       SelectedIndicatorColor="Red"
+                                       IndicatorsShape="Circle"
+                                       HorizontalOptions="CenterAndExpand"
+                                       VerticalOptions="Center"
+                                       Margin="5"/>
+            </StackLayout>  
+
+
+
+
         </StackLayout>
+       
     </ContentPage.Content>
 </ContentPage>

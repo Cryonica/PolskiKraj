@@ -1,4 +1,5 @@
-﻿using PolskiKraj.ViewModels;
+﻿using PolskiKraj.Models;
+using PolskiKraj.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,11 +14,17 @@ namespace PolskiKraj.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Verb1 : ContentPage
     {
-        VerbViewModel verbViewModel;
+        Verb1ViewModel verb1ViewModel;
         public Verb1()
         {
             InitializeComponent();
-            BindingContext = verbViewModel = new VerbViewModel { Title = "1-ое спряжение" };
+            BindingContext = verb1ViewModel = new Verb1ViewModel();
         }
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+            
+        }
+        
     }
 }
