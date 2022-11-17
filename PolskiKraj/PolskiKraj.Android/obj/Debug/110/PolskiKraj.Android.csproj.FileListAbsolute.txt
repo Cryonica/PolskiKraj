@@ -58,6 +58,7 @@ C:\Users\user\source\repos\PolskiKraj\PolskiKraj\PolskiKraj.Android\obj\Debug\11
 C:\Users\user\source\repos\PolskiKraj\PolskiKraj\PolskiKraj.Android\obj\Debug\110\res\drawable\icon_about.png
 C:\Users\user\source\repos\PolskiKraj\PolskiKraj\PolskiKraj.Android\obj\Debug\110\res\drawable\icon_feed.png
 C:\Users\user\source\repos\PolskiKraj\PolskiKraj\PolskiKraj.Android\obj\Debug\110\res\drawable\pkback.png
+C:\Users\user\source\repos\PolskiKraj\PolskiKraj\PolskiKraj.Android\obj\Debug\110\res\drawable\butterfly.jpg
 C:\Users\user\source\repos\PolskiKraj\PolskiKraj\PolskiKraj.Android\obj\Debug\110\uploadflags.txt
 C:\Users\user\source\repos\PolskiKraj\PolskiKraj\PolskiKraj.Android\obj\Debug\110\resolvedassemblies.hash
 C:\Users\user\source\repos\PolskiKraj\PolskiKraj\PolskiKraj.Android\obj\Debug\110\android\assets\FormsViewGroup.dll
@@ -579,4 +580,3 @@ C:\Users\user\source\repos\PolskiKraj\PolskiKraj\PolskiKraj.Android\obj\Debug\11
 C:\Users\user\source\repos\PolskiKraj\PolskiKraj\PolskiKraj.Android\obj\Debug\110\stamp\_GenerateJavaStubs.stamp
 C:\Users\user\source\repos\PolskiKraj\PolskiKraj\PolskiKraj.Android\obj\Debug\110\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\user\source\repos\PolskiKraj\PolskiKraj\PolskiKraj.Android\obj\Debug\110\stamp\_ResolveLibraryProjectImports.stamp
-C:\Users\user\source\repos\PolskiKraj\PolskiKraj\PolskiKraj.Android\obj\Debug\110\res\drawable\butterfly.jpg

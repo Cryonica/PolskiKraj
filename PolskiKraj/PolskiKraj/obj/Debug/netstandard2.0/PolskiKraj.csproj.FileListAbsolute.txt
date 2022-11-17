@@ -10,6 +10,11 @@ C:\Users\user\source\repos\PolskiKraj\PolskiKraj\PolskiKraj\obj\Debug\netstandar
 C:\Users\user\source\repos\PolskiKraj\PolskiKraj\PolskiKraj\obj\Debug\netstandard2.0\Views\ItemsPage.xaml.g.cs
 C:\Users\user\source\repos\PolskiKraj\PolskiKraj\PolskiKraj\obj\Debug\netstandard2.0\Views\LoginPage.xaml.g.cs
 C:\Users\user\source\repos\PolskiKraj\PolskiKraj\PolskiKraj\obj\Debug\netstandard2.0\Views\NewItemPage.xaml.g.cs
+C:\Users\user\source\repos\PolskiKraj\PolskiKraj\PolskiKraj\obj\Debug\netstandard2.0\Views\Verb1.xaml.g.cs
+C:\Users\user\source\repos\PolskiKraj\PolskiKraj\PolskiKraj\obj\Debug\netstandard2.0\Views\Verb2.xaml.g.cs
+C:\Users\user\source\repos\PolskiKraj\PolskiKraj\PolskiKraj\obj\Debug\netstandard2.0\Views\Verb3.xaml.g.cs
+C:\Users\user\source\repos\PolskiKraj\PolskiKraj\PolskiKraj\obj\Debug\netstandard2.0\Views\Verb4.xaml.g.cs
+C:\Users\user\source\repos\PolskiKraj\PolskiKraj\PolskiKraj\obj\Debug\netstandard2.0\Views\Verbs.xaml.g.cs
 C:\Users\user\source\repos\PolskiKraj\PolskiKraj\PolskiKraj\obj\Debug\netstandard2.0\Views\WebSite.xaml.g.cs
 C:\Users\user\source\repos\PolskiKraj\PolskiKraj\PolskiKraj\obj\Debug\netstandard2.0\PolskiKraj.AssemblyInfoInputs.cache
 C:\Users\user\source\repos\PolskiKraj\PolskiKraj\PolskiKraj\obj\Debug\netstandard2.0\PolskiKraj.AssemblyInfo.cs
@@ -19,8 +24,3 @@ C:\Users\user\source\repos\PolskiKraj\PolskiKraj\PolskiKraj\obj\Debug\netstandar
 C:\Users\user\source\repos\PolskiKraj\PolskiKraj\PolskiKraj\obj\Debug\netstandard2.0\ref\PolskiKraj.dll
 C:\Users\user\source\repos\PolskiKraj\PolskiKraj\PolskiKraj\obj\Debug\netstandard2.0\PolskiKraj.pdb
 C:\Users\user\source\repos\PolskiKraj\PolskiKraj\PolskiKraj\obj\Debug\netstandard2.0\PolskiKraj.csproj.AssemblyReference.cache
-C:\Users\user\source\repos\PolskiKraj\PolskiKraj\PolskiKraj\obj\Debug\netstandard2.0\Views\Verbs.xaml.g.cs
-C:\Users\user\source\repos\PolskiKraj\PolskiKraj\PolskiKraj\obj\Debug\netstandard2.0\Views\Verb1.xaml.g.cs
-C:\Users\user\source\repos\PolskiKraj\PolskiKraj\PolskiKraj\obj\Debug\netstandard2.0\Views\Verb2.xaml.g.cs
-C:\Users\user\source\repos\PolskiKraj\PolskiKraj\PolskiKraj\obj\Debug\netstandard2.0\Views\Verb3.xaml.g.cs
-C:\Users\user\source\repos\PolskiKraj\PolskiKraj\PolskiKraj\obj\Debug\netstandard2.0\Views\Verb4.xaml.g.cs

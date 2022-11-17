@@ -10,14 +10,14 @@ using Xamarin.Forms.Xaml;
 
 namespace PolskiKraj.Views
 {
-    [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Verb2 : ContentPage
+   
+    public partial class Verb2 : CarouselPage
     {
-        VerbViewModel viewModel;
+        Verb2ViewModel viewModel;
         public Verb2()
         {
             InitializeComponent();
-            BindingContext = viewModel = new VerbViewModel { Title = "2-ое спряжение" };
+            BindingContext = viewModel = new Verb2ViewModel();
         }
     }
 }

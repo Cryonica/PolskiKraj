@@ -68,6 +68,16 @@
                     </VisualStateGroupList>
                 </Setter>
             </Style>
+            <Style x:Key="TextGreenBold" TargetType="Label">
+                <Setter Property="TextColor" Value="Green"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
+                <Setter Property="FontSize" Value="15"/>
+            </Style>
+            <Style x:Key="TextRedBold" TargetType="Label">
+                <Setter Property="TextColor" Value="Red"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
+                <Setter Property="FontSize" Value="15"/>
+            </Style>
         </ResourceDictionary>        
     </Application.Resources>
 </Application>

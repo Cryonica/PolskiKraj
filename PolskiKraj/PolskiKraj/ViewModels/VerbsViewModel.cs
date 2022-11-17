@@ -34,7 +34,12 @@ namespace PolskiKraj.ViewModels
             Shell.Current.GoToAsync($"{s}");
            
         }
-        
+        public void OnAppearing()
+        {
+            IsBusy = true;
+           
+        }
+
 
 
     }
