@@ -62,7 +62,7 @@
 
 	/* 6: PolskiKraj.dll */
 	/* uncompressed_file_size */
-	.word	121856
+	.word	130048
 	/* loaded */
 	.byte	0
 	/* data */

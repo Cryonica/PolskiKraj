@@ -10,7 +10,7 @@
             <Style x:Key="TableValue" TargetType="Label">
                 <Setter Property="TextColor" Value="Black"/>
                 <Setter Property="BackgroundColor" Value="AliceBlue"/>
-                <Setter Property="FontSize" Value="15"/>
+                <Setter Property="FontSize" Value="14"/>
                 <Setter Property="Padding" Value="5"/>
                 <Setter Property="VerticalTextAlignment" Value="Center"/>
                 <Setter Property="HorizontalTextAlignment" Value="Center"/>
@@ -19,7 +19,6 @@
                 <Setter Property="TextColor" Value="Black"/>
                 <Setter Property="BackgroundColor" Value="#77cfbf"/>
                 <Setter Property="FontSize" Value="15"/>
-                <Setter Property="Padding" Value="5"/>
                 <Setter Property="VerticalTextAlignment" Value="Center"/>
                 <Setter Property="HorizontalTextAlignment" Value="Center"/>
             </Style>
@@ -30,6 +29,7 @@
                 <Setter Property="VerticalTextAlignment" Value="Center"/>
                 <Setter Property="HorizontalTextAlignment" Value="Center"/>
             </Style>
+
         </ResourceDictionary>
     </ContentPage.Resources>
     <ContentPage.Content>
@@ -62,13 +62,13 @@
                                            Style="{DynamicResource TableValue}"/>
                 <Label Text="TY" Grid.Row="1" Grid.Column="0" 
                                        Style="{DynamicResource TableValue}"/>
-                <Label Text="ON/ONA/ONO/ PAN/PANI" Grid.Row="2" Grid.Column="0"
+                <Label Text="ON/ONA/ONO/ PAN/ PANI" Grid.Row="2" Grid.Column="0"
                                            Style="{DynamicResource TableValue}"/>
                 <Label Text="MY" Grid.Row="3" Grid.Column="0"
                                            Style="{DynamicResource TableValue}"/>
                 <Label Text="WY" Grid.Row="4" Grid.Column="0"
                                            Style="{DynamicResource TableValue}"/>
-                <Label Text="ONI / PANOWIE / PAŃSTWO" Grid.Row="5" Grid.Column="0"
+                <Label Text="ONI/PANOWIE/PAŃSTWO" Grid.Row="5" Grid.Column="0"
                                            Style="{DynamicResource TableValue}"/>
                 <Label Text="-Ę" Grid.Row="0" Grid.Column="1"
                                            Style="{DynamicResource TableValueGreen}"/>
@@ -110,16 +110,12 @@
                 <Label Text="-Ą" Grid.Row="5" Grid.Column="1"
                                            Style="{DynamicResource TableValueGreen}"/>
             </Grid>
-            <StackLayout Padding="0,-2,0,-5">
-                <CarouselView ItemsSource="{Binding Items}" Margin="0,0,00,0">
+            <StackLayout Margin="3">
+                <CarouselView ItemsSource="{Binding Items}" Margin="0,0,0,0" IndicatorView="indicator">
                     <CarouselView.ItemTemplate>
                         <DataTemplate>
                             <StackLayout x:DataType="models:WordVerb" Padding="5">
-                                <Grid BackgroundColor="#ebeef2"        >
-                                    <Grid.RowDefinitions>
-                                        <RowDefinition Height="Auto"/>
-                                        <RowDefinition Height="Auto"/>
-                                    </Grid.RowDefinitions>
+                                <StackLayout BackgroundColor="#ebeef2">
                                     <Label HorizontalOptions="Center" TextColor="Black" FontAttributes="Bold" VerticalOptions="Center" Grid.Row="0">
                                         <Label.FormattedText>
                                             <FormattedString>
@@ -131,15 +127,14 @@
                                     <Label HorizontalOptions="Center" TextColor="Black" FontAttributes="Bold" Grid.Row="1" >
                                         <Label.FormattedText>
                                             <FormattedString>
-
-                                                <Span Text="{Binding Root}"></Span>
-                                                <Span Text="{Binding EndInfinitiv}"></Span>
                                                 <Span Text="{Binding Description}"></Span>
                                             </FormattedString>
                                         </Label.FormattedText>
                                     </Label>
-
-                                </Grid>
+                                    
+                                </StackLayout>
+                               
+                                
                                 
                                 <Grid >
                                     <Grid.RowDefinitions>
@@ -149,7 +144,7 @@
                                         <RowDefinition Height="Auto"/>
                                         <RowDefinition Height="Auto"/>
                                         <RowDefinition Height="Auto"/>
-                                        <RowDefinition Height="Auto"/>
+                                        
                                     </Grid.RowDefinitions>
                                     <Grid.ColumnDefinitions>
                                         <ColumnDefinition Width="0.5*"/>
@@ -166,13 +161,14 @@
                                                    Style="{DynamicResource TableValue}"/>
                                     <Label Text="WY" Grid.Row="4" Grid.Column="0"
                                                    Style="{DynamicResource TableValue}"/>
-                                    <Label Text="ONI / PANOWIE / PAŃSTWO" Grid.Row="5" Grid.Column="0"
+                                    <Label Text="ONI/PANOWIE/PAŃSTWO" Grid.Row="5" Grid.Column="0"
                                                    Style="{DynamicResource TableValue}"/>
                                     <Label Grid.Row="0" Grid.Column="1"
                                                    Style="{DynamicResource TableValueGreen}">
                                         <Label.FormattedText>
                                             <FormattedString>
-                                                <Span Text="{Binding Root}"/>
+                                                <Span Text="{Binding Root1}"/>
+                                                <Span Text="{Binding Letter1}" Style="{StaticResource Key=Letter1Color}"/>
                                                 <Span Text="{Binding End1}" Style="{StaticResource TextRedBold}"/>
 
                                             </FormattedString>
@@ -183,7 +179,9 @@
                                                    Style="{DynamicResource TableValueYellow}">
                                         <Label.FormattedText>
                                             <FormattedString>
-                                                <Span Text="{Binding Root}"/>
+                                                <Span Text="{Binding Root2}"/>
+                                                <Span Text="{Binding Letter1}" Style="{StaticResource Key=Letter1Color}"/>
+                                                <Span Text="{Binding Letter2}" Style="{StaticResource Key=TextGreenBold}"/>
                                                 <Span Text="{Binding End2}" Style="{StaticResource TextRedBold}"/>
 
                                             </FormattedString>
@@ -193,7 +191,9 @@
                                           Style="{DynamicResource TableValueYellow}">
                                         <Label.FormattedText>
                                             <FormattedString>
-                                                <Span Text="{Binding Root}"/>
+                                                <Span Text="{Binding Root2}"/>
+                                                <Span Text="{Binding Letter1}" Style="{StaticResource Key=Letter1Color}"/>
+                                                <Span Text="{Binding Letter2}" Style="{StaticResource Key=TextGreenBold}"/> 
                                                 <Span Text="{Binding End3}" Style="{StaticResource TextRedBold}"/>
 
                                             </FormattedString>
@@ -203,7 +203,9 @@
                                           Style="{DynamicResource TableValueYellow}">
                                         <Label.FormattedText>
                                             <FormattedString>
-                                                <Span Text="{Binding Root}"/>
+                                                <Span Text="{Binding Root2}"/>
+                                                <Span Text="{Binding Letter1}" Style="{StaticResource Key=Letter1Color}"/>
+                                                <Span Text="{Binding Letter2}" Style="{StaticResource Key=TextGreenBold}"/> 
                                                 <Span Text="{Binding End4}" Style="{StaticResource TextRedBold}"/>
                                             </FormattedString>
                                         </Label.FormattedText>
@@ -212,7 +214,9 @@
                                           Style="{DynamicResource TableValueYellow}">
                                         <Label.FormattedText>
                                             <FormattedString>
-                                                <Span Text="{Binding Root}"/>
+                                                <Span Text="{Binding Root2}"/>
+                                                <Span Text="{Binding Letter1}" Style="{StaticResource Key=Letter1Color}"/>
+                                                <Span Text="{Binding Letter2}" Style="{StaticResource Key=TextGreenBold}"/> 
                                                 <Span Text="{Binding End5}" Style="{StaticResource TextRedBold}"/>
                                             </FormattedString>
                                         </Label.FormattedText>
@@ -221,7 +225,8 @@
                                                    Style="{DynamicResource TableValueGreen}">
                                         <Label.FormattedText>
                                             <FormattedString>
-                                                <Span Text="{Binding Root}"/>
+                                                <Span Text="{Binding Root1}"/>
+                                                <Span Text="{Binding Letter1}" Style="{StaticResource Key=Letter1Color}"/>
                                                 <Span Text="{Binding End6}" Style="{StaticResource TextRedBold}"/>
                                             </FormattedString>
                                         </Label.FormattedText>
@@ -232,14 +237,14 @@
                         </DataTemplate>
                     </CarouselView.ItemTemplate>
                 </CarouselView>
-                <IndicatorView x:Name="indicator"  Grid.Row="0"
-                                       IndicatorSize="10"
-                                       IndicatorColor="Gray"
-                                       SelectedIndicatorColor="Red"
-                                       IndicatorsShape="Circle"
-                                       HorizontalOptions="CenterAndExpand"
-                                       VerticalOptions="Center"
-                                       Margin="5"/>
+                <IndicatorView x:Name="indicator"
+                               SelectedIndicatorColor="Red"
+                               IndicatorColor="Gray"
+                               IndicatorsShape="Circle"
+                               IndicatorSize="10"
+                               VerticalOptions="Center"
+                               Margin="15"/>
+
             </StackLayout>  
 
 
