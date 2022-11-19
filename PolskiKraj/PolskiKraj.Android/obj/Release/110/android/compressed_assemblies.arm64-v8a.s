@@ -53,7 +53,7 @@
 
 	/* 5: PolskiKraj.Android.dll */
 	/* uncompressed_file_size */
-	.word	302080
+	.word	302592
 	/* loaded */
 	.byte	0
 	/* data */
@@ -62,7 +62,7 @@
 
 	/* 6: PolskiKraj.dll */
 	/* uncompressed_file_size */
-	.word	130048
+	.word	135680
 	/* loaded */
 	.byte	0
 	/* data */

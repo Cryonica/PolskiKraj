@@ -25,8 +25,8 @@
 	.section	.rodata.map_aname.4,"aMS",%progbits,1
 	.type	.L.map_aname.4, %object
 .L.map_aname.4:
-	.asciz	"PolskiKraj.Android"
-	.size	.L.map_aname.4, 19
+	.asciz	"Mono.Android"
+	.size	.L.map_aname.4, 13
 
 	.section	.rodata.map_aname.5,"aMS",%progbits,1
 	.type	.L.map_aname.5, %object
@@ -73,32 +73,32 @@
 	.section	.rodata.map_aname.12,"aMS",%progbits,1
 	.type	.L.map_aname.12, %object
 .L.map_aname.12:
-	.asciz	"Mono.Android"
-	.size	.L.map_aname.12, 13
+	.asciz	"Xamarin.Forms.Platform.Android"
+	.size	.L.map_aname.12, 31
 
 	.section	.rodata.map_aname.13,"aMS",%progbits,1
 	.type	.L.map_aname.13, %object
 .L.map_aname.13:
-	.asciz	"Xamarin.Forms.Platform.Android"
-	.size	.L.map_aname.13, 31
+	.asciz	"Xamarin.AndroidX.Activity"
+	.size	.L.map_aname.13, 26
 
 	.section	.rodata.map_aname.14,"aMS",%progbits,1
 	.type	.L.map_aname.14, %object
 .L.map_aname.14:
-	.asciz	"Xamarin.AndroidX.Activity"
-	.size	.L.map_aname.14, 26
+	.asciz	"Xamarin.AndroidX.DrawerLayout"
+	.size	.L.map_aname.14, 30
 
 	.section	.rodata.map_aname.15,"aMS",%progbits,1
 	.type	.L.map_aname.15, %object
 .L.map_aname.15:
-	.asciz	"Xamarin.AndroidX.DrawerLayout"
-	.size	.L.map_aname.15, 30
+	.asciz	"Xamarin.AndroidX.Fragment"
+	.size	.L.map_aname.15, 26
 
 	.section	.rodata.map_aname.16,"aMS",%progbits,1
 	.type	.L.map_aname.16, %object
 .L.map_aname.16:
-	.asciz	"Xamarin.AndroidX.Fragment"
-	.size	.L.map_aname.16, 26
+	.asciz	"PolskiKraj.Android"
+	.size	.L.map_aname.16, 19
 
 	.section	.rodata.map_aname.17,"aMS",%progbits,1
 	.type	.L.map_aname.17, %object

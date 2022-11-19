@@ -19,6 +19,7 @@ namespace PolskiKraj.Views
             {
 
                 InitializeComponent();
+                Global.Init();
 
                 this.Content = Global.GetWebSite;
 

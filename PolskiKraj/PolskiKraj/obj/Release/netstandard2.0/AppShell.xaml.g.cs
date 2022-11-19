@@ -17,8 +17,16 @@ namespace PolskiKraj {
     public partial class AppShell : global::Xamarin.Forms.Shell {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
+        private global::Xamarin.Forms.TabBar ShellTabBar;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
+        private global::Xamarin.Forms.ShellContent AboutContent;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
             global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(AppShell));
+            ShellTabBar = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.TabBar>(this, "ShellTabBar");
+            AboutContent = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.ShellContent>(this, "AboutContent");
         }
     }
 }

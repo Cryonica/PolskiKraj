@@ -14,7 +14,7 @@ namespace PolskiKraj
            
             InitializeComponent();
             DependencyService.Register<MockDataStore>();
-            MainPage = new AppShell();
+            MainPage = new SplashPage();
         }
 
         protected override void OnStart()

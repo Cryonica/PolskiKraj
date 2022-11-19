@@ -10,18 +10,12 @@ namespace PolskiKraj.ViewModels
     public class VerbViewModel : BaseViewModel
     {
         public ObservableCollection<WordVerb> Items { get; }
-        internal List<WordVerb> inputVrbs;
+        //internal List<WordVerb> inputVrbs;
         public string val { get; set; }
         public VerbViewModel()
         {
            
 
         }
-        public void OnAppearing()
-        {
-            IsBusy = true;
-           
-        }
-
     }
 }

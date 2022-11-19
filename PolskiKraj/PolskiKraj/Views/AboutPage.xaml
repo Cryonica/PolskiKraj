@@ -15,7 +15,7 @@
         </ResourceDictionary>
     </ContentPage.Resources>
 
-    <Grid>
+    <Grid x:Name="maingrid" Opacity="0">
         
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />

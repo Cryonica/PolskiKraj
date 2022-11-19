@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <resources>
+	<style name="MyTheme.Base" parent="Theme.AppCompat.Light">
+	</style>
+
+	<style name="MyTheme" parent="MyTheme.Base">
+	</style>
+	<style name="MyTheme.Splash" parent ="MainTheme">
+		<item name="android:background">@color/launcher_background</item>
+	
+	</style>
+
 
   <style name="MainTheme" parent="MainTheme.Base">
     <!-- As of Xamarin.Forms 4.6 the theme has moved into the Forms binary -->
@@ -15,4 +25,7 @@
          which is used to tint widgets -->
     <!--<item name="colorAccent">#FF4081</item>-->
   </style>
+	
+
+
 </resources>

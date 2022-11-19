@@ -29,8 +29,10 @@
         </ResourceDictionary>
     </Shell.Resources>
 
-    <TabBar>
-        <ShellContent Title="About" Icon="icon_about.png" Route="AboutPage" ContentTemplate="{DataTemplate local:AboutPage}" />
+    <TabBar x:Name="ShellTabBar" Route="main">
+
+        <ShellContent Title="About" Icon="icon_about.png" Route="AboutPage" ContentTemplate="{DataTemplate local:AboutPage}" x:Name="AboutContent" />
+
         <ShellContent Title="Записи" Icon="icon_feed.png" ContentTemplate="{DataTemplate local:Verbs}" />
     </TabBar>
 

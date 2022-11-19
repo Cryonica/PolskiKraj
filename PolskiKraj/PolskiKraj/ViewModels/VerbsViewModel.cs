@@ -15,19 +15,16 @@ namespace PolskiKraj.ViewModels
     {
 
         int taps = 0;
-        ICommand openVerbCommand;
-        public ICommand OpenVerbCommand
-        {
-            get => openVerbCommand;
-        }
+        public ICommand OpenVerbCommand { get; }
 
 
         public VerbsViewModel()
         {
             Title = "Глаголы";
-            openVerbCommand = new Command(OnTapped);
+            OpenVerbCommand = new Command(OnTapped);
         }
-        void OnTapped(object s)
+
+        private void OnTapped(object s)
         {
             taps++;
             

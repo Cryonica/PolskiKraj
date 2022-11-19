@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Drawing;
 using System.Text;
 
 namespace PolskiKraj.ViewModels
@@ -19,6 +20,7 @@ namespace PolskiKraj.ViewModels
             {
                 Items.Add(i);
             }
+         
         }
         List<WordVerb> CreateVerbs()
         {
