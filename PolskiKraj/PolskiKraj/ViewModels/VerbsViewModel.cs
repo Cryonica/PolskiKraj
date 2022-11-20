@@ -1,12 +1,4 @@
-﻿using PolskiKraj.Models;
-using PolskiKraj.Services;
-using PolskiKraj.Views;
-using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.Diagnostics;
-using System.Text;
-using System.Windows.Input;
+﻿using System.Windows.Input;
 using Xamarin.Forms;
 
 namespace PolskiKraj.ViewModels

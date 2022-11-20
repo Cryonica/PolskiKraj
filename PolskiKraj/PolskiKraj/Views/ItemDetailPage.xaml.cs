@@ -1,5 +1,4 @@
 ﻿using PolskiKraj.ViewModels;
-using System.ComponentModel;
 using Xamarin.Forms;
 
 namespace PolskiKraj.Views

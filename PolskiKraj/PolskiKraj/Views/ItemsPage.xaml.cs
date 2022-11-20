@@ -1,14 +1,5 @@
-﻿using PolskiKraj.Models;
-using PolskiKraj.ViewModels;
-using PolskiKraj.Views;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using PolskiKraj.ViewModels;
 using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
 
 namespace PolskiKraj.Views
 {

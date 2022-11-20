@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace PolskiKraj.Models
+﻿namespace PolskiKraj.Models
 {
     public class Item
     {

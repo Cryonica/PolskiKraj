@@ -49,56 +49,56 @@
 	.section	.rodata.map_aname.8,"aMS",%progbits,1
 	.type	.L.map_aname.8, %object
 .L.map_aname.8:
-	.asciz	"Xamarin.AndroidX.Loader"
-	.size	.L.map_aname.8, 24
+	.asciz	"PolskiKraj.Android"
+	.size	.L.map_aname.8, 19
 
 	.section	.rodata.map_aname.9,"aMS",%progbits,1
 	.type	.L.map_aname.9, %object
 .L.map_aname.9:
-	.asciz	"Xamarin.AndroidX.SavedState"
-	.size	.L.map_aname.9, 28
+	.asciz	"Xamarin.AndroidX.Loader"
+	.size	.L.map_aname.9, 24
 
 	.section	.rodata.map_aname.10,"aMS",%progbits,1
 	.type	.L.map_aname.10, %object
 .L.map_aname.10:
-	.asciz	"Xamarin.Google.Android.Material"
-	.size	.L.map_aname.10, 32
+	.asciz	"Xamarin.AndroidX.SavedState"
+	.size	.L.map_aname.10, 28
 
 	.section	.rodata.map_aname.11,"aMS",%progbits,1
 	.type	.L.map_aname.11, %object
 .L.map_aname.11:
-	.asciz	"Xamarin.AndroidX.Lifecycle.Common"
-	.size	.L.map_aname.11, 34
+	.asciz	"Xamarin.Google.Android.Material"
+	.size	.L.map_aname.11, 32
 
 	.section	.rodata.map_aname.12,"aMS",%progbits,1
 	.type	.L.map_aname.12, %object
 .L.map_aname.12:
-	.asciz	"Xamarin.Forms.Platform.Android"
-	.size	.L.map_aname.12, 31
+	.asciz	"Xamarin.AndroidX.Lifecycle.Common"
+	.size	.L.map_aname.12, 34
 
 	.section	.rodata.map_aname.13,"aMS",%progbits,1
 	.type	.L.map_aname.13, %object
 .L.map_aname.13:
-	.asciz	"Xamarin.AndroidX.Activity"
-	.size	.L.map_aname.13, 26
+	.asciz	"Xamarin.Forms.Platform.Android"
+	.size	.L.map_aname.13, 31
 
 	.section	.rodata.map_aname.14,"aMS",%progbits,1
 	.type	.L.map_aname.14, %object
 .L.map_aname.14:
-	.asciz	"Xamarin.AndroidX.DrawerLayout"
-	.size	.L.map_aname.14, 30
+	.asciz	"Xamarin.AndroidX.Activity"
+	.size	.L.map_aname.14, 26
 
 	.section	.rodata.map_aname.15,"aMS",%progbits,1
 	.type	.L.map_aname.15, %object
 .L.map_aname.15:
-	.asciz	"Xamarin.AndroidX.Fragment"
-	.size	.L.map_aname.15, 26
+	.asciz	"Xamarin.AndroidX.DrawerLayout"
+	.size	.L.map_aname.15, 30
 
 	.section	.rodata.map_aname.16,"aMS",%progbits,1
 	.type	.L.map_aname.16, %object
 .L.map_aname.16:
-	.asciz	"PolskiKraj.Android"
-	.size	.L.map_aname.16, 19
+	.asciz	"Xamarin.AndroidX.Fragment"
+	.size	.L.map_aname.16, 26
 
 	.section	.rodata.map_aname.17,"aMS",%progbits,1
 	.type	.L.map_aname.17, %object

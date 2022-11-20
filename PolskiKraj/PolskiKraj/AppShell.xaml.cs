@@ -1,10 +1,5 @@
-﻿using PolskiKraj.Services;
-using PolskiKraj.ViewModels;
-using PolskiKraj.Views;
-using System;
-using System.Collections.Generic;
+﻿using PolskiKraj.Views;
 using System.Net;
-using System.Net.Http;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 

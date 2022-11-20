@@ -1,5 +1,4 @@
-﻿using PolskiKraj.Models;
-using PolskiKraj.Services;
+﻿using PolskiKraj.Services;
 using Xamarin.Forms;
 
 
